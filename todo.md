@@ -1,0 +1,3 @@
+## TODOs
+[] css reset
+[] favicon

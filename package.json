@@ -1,20 +1,21 @@
 {
-  "name": "barebones",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Minimal React boilerplate project designed to work across browsers including IE11",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "David Dinnison",
+  "license": "MIT",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
     "babel-loader": "^8.0.6",
