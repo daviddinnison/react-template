@@ -3,11 +3,9 @@ import styled from 'styled-components';
 
 import { MainPanel } from './core/Panels';
 
-// TODO background min height and possible css reset
-const Wrapper = styled.div`
+const AppWrapper = styled.div`
     background: red;
-    padding: 0;
-    margin: 0;
+    min-height: 100%;
 `;
 
 class App extends React.Component {
@@ -17,11 +15,11 @@ class App extends React.Component {
 
     render() {
         return (
-            <Wrapper>
+            <AppWrapper>
                 <MainPanel>
                     {this.multiply(10, 2)}
                 </MainPanel>
-            </Wrapper>
+            </AppWrapper>
         );
     }
 }
