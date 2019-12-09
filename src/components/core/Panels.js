@@ -3,6 +3,6 @@ import styled from 'styled-components';
 
 export const MainPanel = styled.div`
     background: grey;
-    padding: 2rem;
+    padding: 1rem 0;
     text-align: center;
 `;
