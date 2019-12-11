@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { MainPanel } from 'components/core/Panels';
 
 const AppWrapper = styled.div`
-    background: red;
+    background: lightblue;
     min-height: 100%;
 `;
 
