@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { MainPanel } from 'components/core/Panels';
+import { MainPanel } from 'components/core';
 
 const AppWrapper = styled.div`
     background: lightblue;
@@ -9,19 +9,19 @@ const AppWrapper = styled.div`
 `;
 
 class App extends React.Component {
-    multiply = (num, multipliedBy) => {
-        return <span>{`The number ${num} times ${multipliedBy} is ${num * multipliedBy}`}</span>;
-    }
+	multiply = (num, multipliedBy) => {
+		return <span>{`The number ${num} times ${multipliedBy} is ${num * multipliedBy}`}</span>;
+	}
 
-    render() {
-        return (
-            <AppWrapper>
-                <MainPanel>
-                    {this.multiply(10, 2)}
-                </MainPanel>
-            </AppWrapper>
-        );
-    }
+	render() {
+		return (
+			<AppWrapper>
+				<MainPanel>
+					{this.multiply(10, 2)}
+				</MainPanel>
+			</AppWrapper>
+		);
+	}
 }
 
 export default App;
