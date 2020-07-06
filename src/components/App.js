@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { MainPanel } from 'components/core';
+import { ErrorBoundary, MainPanel } from 'components/core';
 
 const AppWrapper = styled.div`
     background: lightblue;
@@ -16,9 +16,11 @@ class App extends React.Component {
 	render() {
 		return (
 			<AppWrapper>
-				<MainPanel>
-					{this.multiply(10, 2)}
-				</MainPanel>
+				<ErrorBoundary>
+					<MainPanel>
+						{this.multiply(10, 2)}
+					</MainPanel>
+				</ErrorBoundary>
 			</AppWrapper>
 		);
 	}

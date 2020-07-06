@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'components/App';
-import 'reset.css';
+import { ErrorBoundary } from 'components/core';
+import './styles/reset.css';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<ErrorBoundary id="App index"><App /></ErrorBoundary>, document.getElementById('app'));
