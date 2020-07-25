@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Route, Switch } from 'react-router-dom';
 
-import { ErrorBoundary, MainPanel } from 'components/core';
+
+import { ErrorBoundary } from 'components/core';
+import { Home } from 'components/logic/Home';
+import { NotHome } from 'components/logic/NotHome';
 
 const AppWrapper = styled.div`
     background: lightblue;
@@ -16,10 +20,11 @@ class App extends React.Component {
 	render() {
 		return (
 			<AppWrapper>
-				<ErrorBoundary>
-					<MainPanel>
-						{this.multiply(10, 2)}
-					</MainPanel>
+				<ErrorBoundary id="App">
+					<Switch>
+						<Route path="/" render={Home} exact />
+						<Route path="/not-home" render={NotHome} />
+					</Switch>
 				</ErrorBoundary>
 			</AppWrapper>
 		);
