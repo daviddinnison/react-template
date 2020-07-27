@@ -2,16 +2,14 @@
 [] space/tab error
 [x] eslint
   [] object chaining
-  [] linebreak at end of file 
-[x] prop types
-[x] favicon
+  [x] linebreak at end of file 
+[] favicon
 [] helmet
-[] object chain
+[x] react-router-dom - external file with routes
 [] testing
 [] readme
-
-[x] react-router-dom
 [] redux
+[] responsive
 
 
 ## MAYBES
@@ -20,3 +18,4 @@
 [] absolute paths
 [] styled-components
 [] eslint
+[] optional chaining
