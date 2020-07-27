@@ -17,7 +17,8 @@ export class ErrorBoundary extends React.Component {
 
 	render() {
 		const { error, errorMessage } = this.state;
-		const { id } = this.props;
+		const { children, id } = this.props;
+
 		if (error) {
 			return (
 				<div>
@@ -28,7 +29,7 @@ export class ErrorBoundary extends React.Component {
 			);
 		}
 
-		return this.props.children;
+		return children;
 	}
 }
 
