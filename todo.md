@@ -1,5 +1,8 @@
 ## TODOs
+[] space/tab error
 [x] eslint
+  [] object chaining
+  [] linebreak at end of file 
 [x] prop types
 [x] favicon
 [] helmet
@@ -7,7 +10,7 @@
 [] testing
 [] readme
 
-[] react-router-dom
+[x] react-router-dom
 [] redux
 
 
