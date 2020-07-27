@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 
-
 import { ErrorBoundary } from 'components/core';
 import { Home } from 'components/logic/Home';
 import { NotHome } from 'components/logic/NotHome';
